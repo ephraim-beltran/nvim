@@ -1,0 +1,42 @@
+{
+  "Describe block": {
+    "prefix": "desc",
+    "body": [
+      "describe(\"${1:Function to test}\", () => {",
+      "\t${2: // Test here}",
+      "});"
+    ],
+    "description": "Describe block for js testing"
+  },
+  "Testing block": {
+    "prefix": "it",
+    "body": [
+      "it(\"${1:Function to test}\", () => {",
+      "\t${2: // Test here}",
+      "});"
+    ],
+    "description": "Testing block for js testing"
+  },
+  "Async Testing block": {
+    "prefix": "ita",
+    "body": [
+      "it(\"${1:Function to test}\", async () => {",
+      "\t${2: // Test here}",
+      "});"
+    ],
+    "description": "Asynchronous testing block for js testing"
+  },
+  "Render component": {
+    "prefix": "ren",
+    "body": [
+      "render(${1:<${2:Component}} />);"
+    ],
+    "description": "Invoke testing-library `render` function"
+  },
+  "Testing Todo": {
+    "prefix": "itd",
+    "body": [
+      "it.todo(\"${1:Unimplemented Test}\");"
+    ]
+  }
+}
