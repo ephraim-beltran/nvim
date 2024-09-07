@@ -10,14 +10,14 @@
           "javascript",
           "javascriptreact"
         ],
-        "path": "javascript/js+jsx-snippet.json"
+        "path": "./snippets/javascript/js+jsx-snippet.json"
       },
       {
         "language": [
           "javascript"
         ],
-        "path": "javascript/jest-snippets.json"
-      },
+        "path": "./snippets/javascript/jest-snippets.json"
+      }
     ]
   }
 }
