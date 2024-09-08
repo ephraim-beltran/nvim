@@ -22,3 +22,8 @@ end, { expr = true, silent = true, desc = "Open Codeium chat" })
 vim.keymap.set("i", "<A-\\>", function()
   return vim.fn("codeium#CycleOrComplet()")
 end, { expr = true, silent = true, desc = "Generate Codeium suggestion" })
+
+--NOTE: Inc-Rename Keymaps
+vim.keymap.set("n", "<leader>rn", function()
+  return ":IncRename " .. vim.fn.expand("<cword>")
+end, { expr = true, desc = "Rename variable" })
