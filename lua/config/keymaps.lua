@@ -27,3 +27,6 @@ end, { expr = true, silent = true, desc = "Generate Codeium suggestion" })
 vim.keymap.set("n", "<leader>rn", function()
   return ":IncRename " .. vim.fn.expand("<cword>")
 end, { expr = true, desc = "Rename variable" })
+
+--NOTE: Buffer Control Keymaps
+vim.keymap.set("n", "<C-w>", "<Cmd>bd<CR>", { silent = true, desc = "Delete buffer" })
